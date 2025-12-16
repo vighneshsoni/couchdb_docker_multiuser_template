@@ -61,3 +61,5 @@ curl -u username:password http://localhost:5984/_node/_local/_config/couch_perus
   "delete_dbs": "true"
 }
 ```
+## Web Interface (Fauxton)
+You can find the CouchDB web interface (Fauxton) at `http://localhost:5984/_utils/` or at the port you configured.
