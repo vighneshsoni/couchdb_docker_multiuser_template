@@ -40,7 +40,6 @@ docker compose down -v
 curl -u username:password http://localhost:5984/_all_dbs
 ```
 
-\
 **expected output:**
 
 ```json
