@@ -1,0 +1,42 @@
+services:
+  couchdb:
+    image: couchdb:latest
+    container_name: ${COMPOSE_PROJECT_NAME}-couchdb
+    restart: unless-stopped
+    ports:
+      - "${COUCHDB_PORT}:5984"
+    environment:
+      COUCHDB_USER: ${COUCHDB_USER}
+      COUCHDB_PASSWORD: ${COUCHDB_PASSWORD}
+      COUCHDB_CORS_ORIGINS: ${COUCHDB_CORS_ORIGINS}
+      COUCHDB_PORT: ${COUCHDB_PORT}
+    volumes:
+      - couchdb_data:/opt/couchdb/data
+      - ./config/local.ini:/opt/couchdb/etc/local.d/local.ini
+
+  couchdb-init:
+    image: curlimages/curl:latest
+    depends_on:
+      - couchdb
+    restart: "no"
+    entrypoint: >
+      sh -c "
+        echo 'Waiting for CouchDB...';
+        until curl -s http://couchdb:${COUCHDB_PORT}/_up; do sleep 1; done;
+
+        echo 'Creating _users';
+        curl -sf -X PUT http://couchdb:${COUCHDB_PORT}/_users -u ${COUCHDB_USER}:${COUCHDB_PASSWORD} || true;
+
+        echo 'Creating _replicator';
+        curl -sf -X PUT http://couchdb:${COUCHDB_PORT}/_replicator -u ${COUCHDB_USER}:${COUCHDB_PASSWORD} || true;
+
+        echo 'Enabling couch_peruser';
+        curl -sf -X PUT -u ${COUCHDB_USER}:${COUCHDB_PASSWORD} http://couchdb:${COUCHDB_PORT}/_node/_local/_config/couch_peruser/enable -d '\"true\"';
+
+        curl -sf -X PUT -u ${COUCHDB_USER}:${COUCHDB_PASSWORD} http://couchdb:${COUCHDB_PORT}/_node/_local/_config/couch_peruser/delete_dbs -d '\"true\"';
+
+        echo 'Init done';
+      "
+
+volumes:
+  couchdb_data:
